@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
+
+
 <body>
-    <h1>Christian</h1>
-    
+    <h1> To Do List</h1>
+    <input type="text" id="taskput" placeholder="Add a task">
+
+    <button onclick="addTask()">Add task</button>
+    <ul id="tasklist">Your task go here...</ul>
+
+
+    <script>
+
+function getTaskText() {
+   const input = document.getElementById("taskput");
+   const text = input.value.trim();
+   console.log("The input value is :" + input.value); // Log the task text to the console 
+   return text;
+}
+
+function addTask() {
+    const taskText = getTaskText();
+    addTaskItem(taskText);
+}
+
+
+function addTaskItem(taskText) {
+    const li = document.createElement("li");
+    const taskSpan = document.createElement("span");
+    taskSpan.textContent = taskText;
+    li.appendChild(taskSpan);
+    document.getElementById("tasklist").appendChild(li);    
+
+
+}
+
+    </script>
+
 </body>
-</html>
+
+</html
