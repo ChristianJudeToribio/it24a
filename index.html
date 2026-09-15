@@ -48,7 +48,11 @@ function addTaskItem(taskText) {
     const doneButton = createDoneButton(li);
     li.appendChild(doneButton);
 
-   
+    //call the createEditButton function to create an "Edit" button and append it to the li element
+    const editButton = createEditButton(li, taskSpan);
+    li.appendChild(editButton);
+
+    ;
 }
 
 function createDoneButton(li) {
@@ -66,8 +70,27 @@ function createDoneButton(li) {
       console.log("Task Completed", li.textContent, Date.now());
     };
     return doneButton;
-
 }
+
+function createEditButton(li, taskSpan) {
+    const editButton = document.createElement("button");
+    editButton.textContent = "Edit";
+    editButton.style.marginLeft = "8px";
+    editButton.onclick = () => {
+        const currentText = taskSpan.textContent;
+        const newText = prompt("Edit task:", currentText);
+        if (newText !== null && newText.trim() !== "") {
+            taskSpan.textContent = newText.trim();
+            alert("Updated Task.");
+        } else {
+            alert("No Changes Made.");
+        }
+    };
+    return editButton;
+}
+
+
+
 
     </script>
 
