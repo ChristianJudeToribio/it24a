@@ -52,7 +52,9 @@ function addTaskItem(taskText) {
     const editButton = createEditButton(li, taskSpan);
     li.appendChild(editButton);
 
-    ;
+    //call the createDeleteButton function to create a "Delete" button and append it to the li element
+    const deleteButton = createDeleteButton(li);
+    li.appendChild(deleteButton);
 }
 
 function createDoneButton(li) {
@@ -89,8 +91,18 @@ function createEditButton(li, taskSpan) {
     return editButton;
 }
 
+function createDeleteButton(li) {
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.style.marginLeft = "8px";
+    deleteButton.onclick = () => handleDeleteClick(li);
+    return deleteButton;
+}
 
-
+function handleDeleteClick(li) {
+    li.remove();
+    alert("Task Deleted.");
+}
 
     </script>
 
