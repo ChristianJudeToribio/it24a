@@ -1,16 +1,17 @@
 [
     {
-        "name": "Student Welfare and Development Center",
-        "title": "SWDC",
-        "lat": 8.360176,
-        "lng": 124.867541,
-        "img": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGZpa204MWN5enlicWY3eGd3cG1mb3hheDA0MTdqbGZjMm1kOGJ5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d2lcHJTG5Tscg/giphy.webp"
+        "name" : "Student Welfare and Development Center",
+        "title" : "SWDC",
+        "lat" :8.360176,
+        "lng" : 124.867541,
+    "image" : "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWh3eTl4OWtqMnZrN2JmNHp6YWlpbmdoMDl2dDVyc2h4dHAzZHlwMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qaHR5h1jTzCFNtXJj7/200.webp"
     },
     {
-        "name": "NBSC Covered Court",
-        "title": "NBSC CC",
-        "lat": 8.359992,
-        "lng": 124.868861,
-        "img": "https://davaotoday.com/wp-content/uploads/2026/06/577511005_122105022579082826_7445461519910680124_n.jpg"
+        "name" : "NBSC Covered Court",
+        "title" : "NBSC CC",
+        "lat" :8.359992,
+        "lng" : 124.868861,
+        "image" : "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWIwenBxdWl3bmp6MXNsamI3bDVqNHNxM3FhbWdjNXluZXRhMHg2MSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/OuQmhmAAdJFLi/giphy.gif"
+
     }
 ]
